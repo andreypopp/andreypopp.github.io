@@ -65005,14 +65005,14 @@ var Section = function Section(props) {
   var styles = ui_Style__WEBPACK_IMPORTED_MODULE_3__["useStyles"](function (theme) {
     return {
       root: {
-        padding: 10,
-        backgroundColor: theme.backgroundSecondaryColor,
-        width: '100%',
-        borderTopWidth: 2,
-        borderTopColor: theme.dimmedColor,
-        paddingVertical: 10
+        width: '100%'
       },
       title: {
+        paddingBottom: 5,
+        borderBottomWidth: 2,
+        borderBottomColor: theme.dimmedColor
+      },
+      titleText: {
         color: theme.dimmedColor,
         fontWeight: '900',
         fontSize: '8pt',
@@ -65030,18 +65030,25 @@ var Section = function Section(props) {
       lineNumber: 29
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_1__["Text"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_1__["View"], {
     style: styles.title,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }, props.title), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_1__["View"], {
-    style: styles.children,
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_1__["Text"], {
+    style: styles.titleText,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
+    },
+    __self: this
+  }, props.title)), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_1__["View"], {
+    style: styles.children,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
     },
     __self: this
   }, props.children));
@@ -65172,8 +65179,14 @@ var WritingsArchive = function WritingsArchive(_ref2) {
   var lastYear = null;
   var styles = ui_Style__WEBPACK_IMPORTED_MODULE_4__["useStyles"](function (theme) {
     return {
+      root: {
+        width: '100%'
+      },
       year: {
-        paddingTop: 30
+        paddingTop: 30,
+        paddingBottom: 5,
+        borderBottomWidth: 2,
+        borderBottomColor: theme.dimmedColor
       },
       yearText: {
         color: theme.dimmedColor,
@@ -65197,14 +65210,14 @@ var WritingsArchive = function WritingsArchive(_ref2) {
           key: "year-".concat(lastYear),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 82
+            lineNumber: 88
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["Text"], {
           style: styles.yearText,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 83
+            lineNumber: 89
           },
           __self: this
         }, lastYear)));
@@ -65214,14 +65227,14 @@ var WritingsArchive = function WritingsArchive(_ref2) {
         key: item.href,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 95
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](WritingLink, {
         writing: item,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 96
         },
         __self: this
       })));
@@ -65242,9 +65255,10 @@ var WritingsArchive = function WritingsArchive(_ref2) {
   }
 
   return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
+    style: styles.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 100
     },
     __self: this
   }, children);
@@ -65258,87 +65272,83 @@ var WritingsArchive = function WritingsArchive(_ref2) {
       }
     };
   });
-  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_Page__WEBPACK_IMPORTED_MODULE_6__["Page"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 104
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_Section__WEBPACK_IMPORTED_MODULE_7__["Section"], {
-    title: "Recently",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 106
-    },
-    __self: this
-  }, writingsIndex.slice(0, 3).map(function (item) {
+  var recently = writingsIndex.filter(function (item) {
+    return item.date.year >= 2019;
+  }).slice(0, 3).map(function (item) {
     return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
       key: item.href,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 108
+        lineNumber: 113
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](WritingLink, {
       writing: item,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 109
+        lineNumber: 114
       },
       __self: this
     }));
-  }))), react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
-    style: styles.me,
+  });
+  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_Page__WEBPACK_IMPORTED_MODULE_6__["Page"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 118
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](ui_Content__WEBPACK_IMPORTED_MODULE_5__["Content"], {
+  }, recently.lentgh > 0 ? react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_Section__WEBPACK_IMPORTED_MODULE_7__["Section"], {
+    title: "Recently",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 120
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 116
-    },
-    __self: this
-  }, "I'm Andrey Popp, software engineer based in ", geoloc, "."), react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 117
-    },
-    __self: this
-  }, "You can follow me on ", twitter, " which is mostly about tech. If you have something to say to me directly you can reach me via ", email, "."), react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("p", {
+  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 121
     },
     __self: this
-  }, "The list of my current interests include: Reason/OCaml, query languages, end-user programming, development tooling, programming language theory, vim/neovim, ..."))), react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_Section__WEBPACK_IMPORTED_MODULE_7__["Section"], {
-    title: "Archive",
+  }, recently)) : null, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
+    style: styles.me,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 124
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](WritingsArchive, {
+  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](ui_Content__WEBPACK_IMPORTED_MODULE_5__["Content"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: this
+  }, "I'm Andrey Popp, software engineer based in ", geoloc, "."), react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127
+    },
+    __self: this
+  }, "You can follow me on ", twitter, " which is mostly about tech. If you have something to say to me directly you can reach me via ", email, "."), react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131
+    },
+    __self: this
+  }, "The list of my current interests include: Reason/OCaml, query languages, end-user programming, development tooling, programming language theory, vim/neovim, ..."))), react__WEBPACK_IMPORTED_MODULE_1__["createElement"](WritingsArchive, {
     writings: writingsIndex,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 138
     },
     __self: this
-  })));
+  }));
 });
 
 /***/ }),
@@ -65357,409 +65367,409 @@ module.exports = [{
   "title": "React Style",
   "href": "/writings/2014-08-06-react-style",
   "date": {
-    "year": "2014",
-    "month": "08",
-    "day": "06"
+    "year": 2014,
+    "month": 8,
+    "day": 6
   }
 }, {
   "title": "Fighting Node callback hell with PureScript",
   "href": "/writings/2014-07-21-fighting-node-callbacks-with-purescript",
   "date": {
-    "year": "2014",
-    "month": "07",
-    "day": "21"
+    "year": 2014,
+    "month": 7,
+    "day": 21
   }
 }, {
   "title": "Recreating core.async tutorial with ES6 generators",
   "href": "/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators",
   "date": {
-    "year": "2013",
-    "month": "11",
-    "day": "09"
+    "year": 2013,
+    "month": 11,
+    "day": 9
   }
 }, {
   "title": "Making express type safe with TypeScript and promises",
   "href": "/writings/2013-11-08-making-express-type-safe-with-typescript-and-promises",
   "date": {
-    "year": "2013",
-    "month": "11",
-    "day": "08"
+    "year": 2013,
+    "month": 11,
+    "day": 8
   }
 }, {
   "title": "xcss: bundler for modular CSS components",
   "href": "/writings/2013-11-07-xcss-bundler-for-modular-css",
   "date": {
-    "year": "2013",
-    "month": "11",
-    "day": "07"
+    "year": 2013,
+    "month": 11,
+    "day": 7
   }
 }, {
   "title": "Testing Node.js apps with Mocha and Fibers",
   "href": "/writings/2013-11-03-testing-with-mocha-and-fibers",
   "date": {
-    "year": "2013",
-    "month": "11",
-    "day": "03"
+    "year": 2013,
+    "month": 11,
+    "day": 3
   }
 }, {
   "title": "pursuing a better web: structured data",
   "href": "/writings/2013-06-10-pursuing-a-better-web-structured-data",
   "date": {
-    "year": "2013",
-    "month": "06",
-    "day": "10"
+    "year": 2013,
+    "month": 6,
+    "day": 10
   }
 }, {
   "title": "We need a platform for email, not a service",
   "href": "/writings/2013-06-05-we-need-a-platform-for-email-not-a-service",
   "date": {
-    "year": "2013",
-    "month": "06",
-    "day": "05"
+    "year": 2013,
+    "month": 6,
+    "day": 5
   }
 }, {
   "title": "small packages for node.js",
   "href": "/writings/2013-05-29-node-frictionless-require-",
   "date": {
-    "year": "2013",
-    "month": "05",
-    "day": "29"
+    "year": 2013,
+    "month": 5,
+    "day": 29
   }
 }, {
   "title": "Why you should write Makefiles",
   "href": "/writings/2013-05-23-why-you-should-write-makefiles",
   "date": {
-    "year": "2013",
-    "month": "05",
-    "day": "23"
+    "year": 2013,
+    "month": 5,
+    "day": 23
   }
 }, {
   "title": "nginx as a development tool: not here yet",
   "href": "/writings/2013-05-23-nginx-as-a-development-tool-things-i-wish-it-has",
   "date": {
-    "year": "2013",
-    "month": "05",
-    "day": "23"
+    "year": 2013,
+    "month": 5,
+    "day": 23
   }
 }, {
   "title": "RPC over WebSockets",
   "href": "/writings/2013-05-21-rpc-over-websocket-the-easy-way",
   "date": {
-    "year": "2013",
-    "month": "05",
-    "day": "21"
+    "year": 2013,
+    "month": 5,
+    "day": 21
   }
 }, {
   "title": "Node.js: \"domain-local\" storage",
   "href": "/writings/2013-05-18-node-js-domain-local-storage",
   "date": {
-    "year": "2013",
-    "month": "05",
-    "day": "18"
+    "year": 2013,
+    "month": 5,
+    "day": 18
   }
 }, {
   "title": "Makefile recipes for Node.js packages",
   "href": "/writings/2013-05-16-makefile-recipes-for-node-js",
   "date": {
-    "year": "2013",
-    "month": "05",
-    "day": "16"
+    "year": 2013,
+    "month": 5,
+    "day": 16
   }
 }, {
   "title": "Projections for Backbone.Collection",
   "href": "/writings/2013-05-15-projections-for-backbone-collections",
   "date": {
-    "year": "2013",
-    "month": "05",
-    "day": "15"
+    "year": 2013,
+    "month": 5,
+    "day": 15
   }
 }, {
   "title": "Styling Backbone views",
   "href": "/writings/2013-05-07-styling-backbone-views",
   "date": {
-    "year": "2013",
-    "month": "05",
-    "day": "07"
+    "year": 2013,
+    "month": 5,
+    "day": 7
   }
 }, {
   "title": "On Medium",
   "href": "/writings/2013-04-18-on-medium",
   "date": {
-    "year": "2013",
-    "month": "04",
-    "day": "18"
+    "year": 2013,
+    "month": 4,
+    "day": 18
   }
 }, {
   "title": "There is no standard for OAuth",
   "href": "/writings/2013-03-25-oauth-critique",
   "date": {
-    "year": "2013",
-    "month": "03",
-    "day": "25"
+    "year": 2013,
+    "month": 3,
+    "day": 25
   }
 }, {
   "title": "Opera + WebKit: good or bad?",
   "href": "/writings/2013-02-14-opera-and-webkit-good-or-bad",
   "date": {
-    "year": "2013",
-    "month": "02",
-    "day": "14"
+    "year": 2013,
+    "month": 2,
+    "day": 14
   }
 }, {
   "title": "On Twitter Flight",
   "href": "/writings/2013-02-03-on-twitter-flight",
   "date": {
-    "year": "2013",
-    "month": "02",
-    "day": "03"
+    "year": 2013,
+    "month": 2,
+    "day": 3
   }
 }, {
   "title": "App.net business model",
   "href": "/writings/2012-12-25-app-net-business-model",
   "date": {
-    "year": "2012",
-    "month": "12",
-    "day": "25"
+    "year": 2012,
+    "month": 12,
+    "day": 25
   }
 }, {
   "title": "Development environments with pip",
   "href": "/writings/2012-11-04-development-environments-with-pip",
   "date": {
-    "year": "2012",
-    "month": "11",
-    "day": "04"
+    "year": 2012,
+    "month": 11,
+    "day": 4
   }
 }, {
   "title": "\"callbacks to promises\" with javascript",
   "href": "/writings/2012-10-30-callbacks-to-promises",
   "date": {
-    "year": "2012",
-    "month": "10",
-    "day": "30"
+    "year": 2012,
+    "month": 10,
+    "day": 30
   }
 }, {
   "title": "Emerging Languages: Bandicoot, Roy and Elm",
   "href": "/writings/2012-09-30-emerging-languages-bandicoot-elm-roy",
   "date": {
-    "year": "2012",
-    "month": "09",
-    "day": "30"
+    "year": 2012,
+    "month": 9,
+    "day": 30
   }
 }, {
   "title": "On \"Brave New World\" by Huxley",
   "href": "/writings/2012-09-27-on-brave-new-world-by-huxley",
   "date": {
-    "year": "2012",
-    "month": "09",
-    "day": "27"
+    "year": 2012,
+    "month": 9,
+    "day": 27
   }
 }, {
   "title": "How I write CoffeeScript",
   "href": "/writings/2012-09-18-how-i-write-coffee-script",
   "date": {
-    "year": "2012",
-    "month": "09",
-    "day": "18"
+    "year": 2012,
+    "month": 9,
+    "day": 18
   }
 }, {
   "title": "Runtime management for Python apps",
   "href": "/writings/2012-09-09-runtime-management-for-python-apps",
   "date": {
-    "year": "2012",
-    "month": "09",
-    "day": "09"
+    "year": 2012,
+    "month": 9,
+    "day": 9
   }
 }, {
   "title": "routr: intro",
   "href": "/writings/2012-09-05-routr-intro",
   "date": {
-    "year": "2012",
-    "month": "09",
-    "day": "05"
+    "year": 2012,
+    "month": 9,
+    "day": 5
   }
 }, {
   "title": "docgen.mk",
   "href": "/writings/2012-09-02-docgen.mk",
   "date": {
-    "year": "2012",
-    "month": "09",
-    "day": "02"
+    "year": 2012,
+    "month": 9,
+    "day": 2
   }
 }, {
   "title": "Ensime for Vim",
   "href": "/writings/2012-09-01-ensime-for-vim",
   "date": {
-    "year": "2012",
-    "month": "09",
-    "day": "01"
+    "year": 2012,
+    "month": 9,
+    "day": 1
   }
 }, {
   "title": "Polyplatformic software stacks",
   "href": "/writings/2012-05-28-polyplatformic-software-stacks",
   "date": {
-    "year": "2012",
-    "month": "05",
-    "day": "28"
+    "year": 2012,
+    "month": 5,
+    "day": 28
   }
 }, {
   "title": "PostgreSQL's composite types",
   "href": "/writings/2012-05-20-postgresqls-composite-types",
   "date": {
-    "year": "2012",
-    "month": "05",
-    "day": "20"
+    "year": 2012,
+    "month": 5,
+    "day": 20
   }
 }, {
   "title": "music streaming, oh my!",
   "href": "/writings/2012-03-07-music-streaming-oh-my",
   "date": {
-    "year": "2012",
-    "month": "03",
-    "day": "07"
+    "year": 2012,
+    "month": 3,
+    "day": 7
   }
 }, {
   "title": "Music, The distributed economy",
   "href": "/writings/2012-02-27-music-distributed-economy",
   "date": {
-    "year": "2012",
-    "month": "02",
-    "day": "27"
+    "year": 2012,
+    "month": 2,
+    "day": 27
   }
 }, {
   "title": "Open source goodies for Backbone",
   "href": "/writings/2012-02-02-open-source-goodies-for-backbone",
   "date": {
-    "year": "2012",
-    "month": "02",
-    "day": "02"
+    "year": 2012,
+    "month": 2,
+    "day": 2
   }
 }, {
   "title": "ScalaTypes podcast",
   "href": "/writings/2011-08-09-scalatypes-podcast",
   "date": {
-    "year": "2011",
-    "month": "08",
-    "day": "09"
+    "year": 2011,
+    "month": 8,
+    "day": 9
   }
 }, {
   "title": "Reading slides on client side technologies...",
   "href": "/writings/2011-08-06-reading-slides-on-js",
   "date": {
-    "year": "2011",
-    "month": "08",
-    "day": "06"
+    "year": 2011,
+    "month": 8,
+    "day": 6
   }
 }, {
   "title": "Learning Python",
   "href": "/writings/2011-07-08-learning-python",
   "date": {
-    "year": "2011",
-    "month": "07",
-    "day": "08"
+    "year": 2011,
+    "month": 7,
+    "day": 8
   }
 }, {
   "title": "Who cares about zope?",
   "href": "/writings/2011-06-08-who-cares-about-zope",
   "date": {
-    "year": "2011",
-    "month": "06",
-    "day": "08"
+    "year": 2011,
+    "month": 6,
+    "day": 8
   }
 }, {
   "title": "Why do Erlang need modules",
   "href": "/writings/2011-05-24-why-do-erlang-need-modules",
   "date": {
-    "year": "2011",
-    "month": "05",
-    "day": "24"
+    "year": 2011,
+    "month": 5,
+    "day": 24
   }
 }, {
   "title": "Flipboard iPad app",
   "href": "/writings/2011-05-14-flipboard-app",
   "date": {
-    "year": "2011",
-    "month": "05",
-    "day": "14"
+    "year": 2011,
+    "month": 5,
+    "day": 14
   }
 }, {
   "title": "Implementation of EIP in Erlang, part 1: Idea",
   "href": "/writings/2011-05-01-project-idea-eip-in-erlang-pt-1",
   "date": {
-    "year": "2011",
-    "month": "05",
-    "day": "01"
+    "year": 2011,
+    "month": 5,
+    "day": 1
   }
 }, {
   "title": "Better PEP-8",
   "href": "/writings/2011-04-02-pep8",
   "date": {
-    "year": "2011",
-    "month": "04",
-    "day": "02"
+    "year": 2011,
+    "month": 4,
+    "day": 2
   }
 }, {
   "title": "API for accessing SQL databases",
   "href": "/writings/2011-02-23-api-for-accessing-sql-databases",
   "date": {
-    "year": "2011",
-    "month": "02",
-    "day": "23"
+    "year": 2011,
+    "month": 2,
+    "day": 23
   }
 }, {
   "title": "Транзитивное замыкание в SQL",
   "href": "/writings/2011-02-18-transitive-closure-with-SQL",
   "date": {
-    "year": "2011",
-    "month": "02",
-    "day": "18"
+    "year": 2011,
+    "month": 2,
+    "day": 18
   }
 }, {
   "title": "Pyramid: content negotiation",
   "href": "/writings/2011-02-13-content-negotiation-with-pyramid",
   "date": {
-    "year": "2011",
-    "month": "02",
-    "day": "13"
+    "year": 2011,
+    "month": 2,
+    "day": 13
   }
 }, {
   "title": "Интересные проекты на GitHub",
   "href": "/writings/2011-02-03-what-github-projects-im-follow",
   "date": {
-    "year": "2011",
-    "month": "02",
-    "day": "03"
+    "year": 2011,
+    "month": 2,
+    "day": 3
   }
 }, {
   "title": "О свойствах (property) в Python",
   "href": "/writings/2010-07-23-python-property",
   "date": {
-    "year": "2010",
-    "month": "07",
-    "day": "23"
+    "year": 2010,
+    "month": 7,
+    "day": 23
   }
 }, {
   "title": "Where выражения в Python",
   "href": "/writings/2010-07-21-python-where-statement",
   "date": {
-    "year": "2010",
-    "month": "07",
-    "day": "21"
+    "year": 2010,
+    "month": 7,
+    "day": 21
   }
 }, {
   "title": "Generic 0.2",
   "href": "/writings/2010-07-19-generic-release-0.2",
   "date": {
-    "year": "2010",
-    "month": "07",
-    "day": "19"
+    "year": 2010,
+    "month": 7,
+    "day": 19
   }
 }, {
   "title": "Мультидиспетчеризация с generic",
   "href": "/writings/2010-07-16-generic-multidispatching",
   "date": {
-    "year": "2010",
-    "month": "07",
-    "day": "16"
+    "year": 2010,
+    "month": 7,
+    "day": 16
   }
 }];
 
