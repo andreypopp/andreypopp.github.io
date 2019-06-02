@@ -65254,7 +65254,7 @@ var email = react__WEBPACK_IMPORTED_MODULE_1__["createElement"](ui_Content__WEBP
 var WritingLink = function WritingLink(_ref) {
   var writing = _ref.writing;
 
-  var _handlePress = function _handlePress(e) {
+  var onPress = function onPress(e) {
     return Object(ui_Link__WEBPACK_IMPORTED_MODULE_8__["handlePress"])(e, writing.href);
   };
 
@@ -65276,20 +65276,21 @@ var WritingLink = function WritingLink(_ref) {
     };
   });
   return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["TouchableOpacity"], {
+    accessibilityRole: "link",
+    href: writing.href,
     style: styles.root,
+    onPress: onPress,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["Text"], {
-    accessibilityRole: "link",
     style: styles.title,
     href: writing.href,
-    onPress: _handlePress,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 54
     },
     __self: this
   }, writing.title), react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["Text"], {
