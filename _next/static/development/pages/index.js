@@ -65900,7 +65900,7 @@ module.exports = [{
 
 /***/ }),
 
-/***/ 0:
+/***/ 2:
 /*!*********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fandreypopp%2FWorkspace%2Fandreypopp.com%2Fsite%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************************************/
@@ -65923,5 +65923,5 @@ module.exports = dll_9b549f1a9ec25a08a85a;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
