@@ -10319,6 +10319,54 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
+/***/ "../node_modules/next/node_modules/webpack/buildin/global.js":
+/*!*************************************************************************************************************************!*\
+  !*** delegated ../node_modules/next/node_modules/webpack/buildin/global.js from dll-reference dll_9b549f1a9ec25a08a85a ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(/*! dll-reference dll_9b549f1a9ec25a08a85a */ "dll-reference dll_9b549f1a9ec25a08a85a"))("../node_modules/next/node_modules/webpack/buildin/global.js");
+
+/***/ }),
+
+/***/ "../node_modules/next/node_modules/webpack/buildin/module.js":
+/*!*******************************************************************!*\
+  !*** ../node_modules/next/node_modules/webpack/buildin/module.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function (module) {
+  if (!module.webpackPolyfill) {
+    module.deprecate = function () {};
+
+    module.paths = []; // module.parent = undefined by default
+
+    if (!module.children) module.children = [];
+    Object.defineProperty(module, "loaded", {
+      enumerable: true,
+      get: function get() {
+        return module.l;
+      }
+    });
+    Object.defineProperty(module, "id", {
+      enumerable: true,
+      get: function get() {
+        return module.i;
+      }
+    });
+    module.webpackPolyfill = 1;
+  }
+
+  return module;
+};
+
+/***/ }),
+
 /***/ "../node_modules/normalize-css-color/index.js":
 /*!****************************************************!*\
   !*** ../node_modules/normalize-css-color/index.js ***!
@@ -10695,12 +10743,12 @@ module.exports = normalizeColor;
 
 /***/ "../node_modules/object-assign/index.js":
 /*!****************************************************************************************************!*\
-  !*** delegated ../node_modules/object-assign/index.js from dll-reference dll_fbfdd5333204b8b31297 ***!
+  !*** delegated ../node_modules/object-assign/index.js from dll-reference dll_9b549f1a9ec25a08a85a ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_fbfdd5333204b8b31297 */ "dll-reference dll_fbfdd5333204b8b31297"))("../node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_9b549f1a9ec25a08a85a */ "dll-reference dll_9b549f1a9ec25a08a85a"))("../node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -11372,12 +11420,12 @@ process.umask = function() { return 0; };
 
 /***/ "../node_modules/prop-types/checkPropTypes.js":
 /*!**********************************************************************************************************!*\
-  !*** delegated ../node_modules/prop-types/checkPropTypes.js from dll-reference dll_fbfdd5333204b8b31297 ***!
+  !*** delegated ../node_modules/prop-types/checkPropTypes.js from dll-reference dll_9b549f1a9ec25a08a85a ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_fbfdd5333204b8b31297 */ "dll-reference dll_fbfdd5333204b8b31297"))("../node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_9b549f1a9ec25a08a85a */ "dll-reference dll_9b549f1a9ec25a08a85a"))("../node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -12012,12 +12060,12 @@ if (true) {
 
 /***/ "../node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!********************************************************************************************************************!*\
-  !*** delegated ../node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_fbfdd5333204b8b31297 ***!
+  !*** delegated ../node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_9b549f1a9ec25a08a85a ***!
   \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_fbfdd5333204b8b31297 */ "dll-reference dll_fbfdd5333204b8b31297"))("../node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_9b549f1a9ec25a08a85a */ "dll-reference dll_9b549f1a9ec25a08a85a"))("../node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -12548,7 +12596,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_fbfdd5333204b8b31297
 
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/module.js */ "../node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! ./../webpack/buildin/global.js */ "../node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../next/node_modules/webpack/buildin/module.js */ "../node_modules/next/node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! ./../next/node_modules/webpack/buildin/global.js */ "../node_modules/next/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -14451,12 +14499,12 @@ module.exports = unstableNativeDependencies;
 
 /***/ "../node_modules/react-dom/index.js":
 /*!************************************************************************************************!*\
-  !*** delegated ../node_modules/react-dom/index.js from dll-reference dll_fbfdd5333204b8b31297 ***!
+  !*** delegated ../node_modules/react-dom/index.js from dll-reference dll_9b549f1a9ec25a08a85a ***!
   \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_fbfdd5333204b8b31297 */ "dll-reference dll_fbfdd5333204b8b31297"))("../node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_9b549f1a9ec25a08a85a */ "dll-reference dll_9b549f1a9ec25a08a85a"))("../node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -50608,7 +50656,7 @@ function (_Animation) {
 }(_Animation__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (DecayAnimation);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../webpack/buildin/global.js */ "../node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../next/node_modules/webpack/buildin/global.js */ "../node_modules/next/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -50898,7 +50946,7 @@ function (_Animation) {
 }(_Animation__WEBPACK_IMPORTED_MODULE_2__["default"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (SpringAnimation);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../webpack/buildin/global.js */ "../node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../next/node_modules/webpack/buildin/global.js */ "../node_modules/next/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -51059,7 +51107,7 @@ function (_Animation) {
 }(_Animation__WEBPACK_IMPORTED_MODULE_2__["default"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (TimingAnimation);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../webpack/buildin/global.js */ "../node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../next/node_modules/webpack/buildin/global.js */ "../node_modules/next/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -60920,18 +60968,18 @@ var TimerMixin = {
 
 module.exports = TimerMixin;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "../node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../next/node_modules/webpack/buildin/global.js */ "../node_modules/next/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
 /***/ "../node_modules/react/index.js":
 /*!********************************************************************************************!*\
-  !*** delegated ../node_modules/react/index.js from dll-reference dll_fbfdd5333204b8b31297 ***!
+  !*** delegated ../node_modules/react/index.js from dll-reference dll_9b549f1a9ec25a08a85a ***!
   \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_fbfdd5333204b8b31297 */ "dll-reference dll_fbfdd5333204b8b31297"))("../node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_9b549f1a9ec25a08a85a */ "dll-reference dll_9b549f1a9ec25a08a85a"))("../node_modules/react/index.js");
 
 /***/ }),
 
@@ -61873,7 +61921,7 @@ var index = (function () {
 
 /* harmony default export */ __webpack_exports__["default"] = (index);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../next/node_modules/webpack/buildin/global.js */ "../node_modules/next/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -64611,54 +64659,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "../node_modules/webpack/buildin/global.js":
-/*!*******************************************************************************************************!*\
-  !*** delegated ../node_modules/webpack/buildin/global.js from dll-reference dll_fbfdd5333204b8b31297 ***!
-  \*******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(/*! dll-reference dll_fbfdd5333204b8b31297 */ "dll-reference dll_fbfdd5333204b8b31297"))("../node_modules/webpack/buildin/global.js");
-
-/***/ }),
-
-/***/ "../node_modules/webpack/buildin/module.js":
-/*!*************************************************!*\
-  !*** ../node_modules/webpack/buildin/module.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function (module) {
-  if (!module.webpackPolyfill) {
-    module.deprecate = function () {};
-
-    module.paths = []; // module.parent = undefined by default
-
-    if (!module.children) module.children = [];
-    Object.defineProperty(module, "loaded", {
-      enumerable: true,
-      get: function get() {
-        return module.l;
-      }
-    });
-    Object.defineProperty(module, "id", {
-      enumerable: true,
-      get: function get() {
-        return module.i;
-      }
-    });
-    module.webpackPolyfill = 1;
-  }
-
-  return module;
-};
-
-/***/ }),
-
 /***/ "./Page.js":
 /*!*****************!*\
   !*** ./Page.js ***!
@@ -64672,14 +64672,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageFooter", function() { return PageFooter; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Logo", function() { return Logo; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageHeader", function() { return PageHeader; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_native_web__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-native-web */ "../node_modules/react-native-web/dist/index.js");
-/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-feather */ "../node_modules/react-feather/dist/index.js");
-/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_feather__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ui */ "../node_modules/ui/index.js");
-/* harmony import */ var ui_Style__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ui/Style */ "../node_modules/ui/Style.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "../node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_native_web__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-native-web */ "../node_modules/react-native-web/dist/index.js");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-feather */ "../node_modules/react-feather/dist/index.js");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_feather__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ui */ "../node_modules/ui/index.js");
+/* harmony import */ var ui_Style__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ui/Style */ "../node_modules/ui/Style.js");
+
 
 var _jsxFileName = "/Users/andreypopp/Workspace/andreypopp.com/site/Page.js";
 
@@ -64696,18 +64699,25 @@ var Page = function Page(_ref) {
       subtitle = _ref.subtitle,
       showBackLink = _ref.showBackLink;
 
-  var _UI$useDOMSize = ui__WEBPACK_IMPORTED_MODULE_4__["useDOMSize"](),
-      _UI$useDOMSize2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_UI$useDOMSize, 2),
+  var _UI$useDOMSize = ui__WEBPACK_IMPORTED_MODULE_5__["useDOMSize"](),
+      _UI$useDOMSize2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_UI$useDOMSize, 2),
       size = _UI$useDOMSize2[0],
       sizeRef = _UI$useDOMSize2[1];
 
   var isWideScreen = size != null && size.width > 700;
-  var layoutStyle = ui__WEBPACK_IMPORTED_MODULE_4__["useStyle"](function (theme) {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (title) {
+      document.title = _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(title) ? title.join() : title;
+    } else {
+      document.title = "@andreypopp";
+    }
+  }, [title]);
+  var layoutStyle = ui__WEBPACK_IMPORTED_MODULE_5__["useStyle"](function (theme) {
     return {
       width: isWideScreen ? 700 : 350
     };
   }, [isWideScreen]);
-  var styles = ui__WEBPACK_IMPORTED_MODULE_4__["useStyles"](function (theme) {
+  var styles = ui__WEBPACK_IMPORTED_MODULE_5__["useStyles"](function (theme) {
     return {
       root: {
         backgroundColor: theme.backgroundColor,
@@ -64726,62 +64736,62 @@ var Page = function Page(_ref) {
       }
     };
   });
-  var headerElement = react__WEBPACK_IMPORTED_MODULE_1__["useMemo"](function () {
-    return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](PageHeader, {
+  var headerElement = react__WEBPACK_IMPORTED_MODULE_2__["useMemo"](function () {
+    return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](PageHeader, {
       showBackLink: showBackLink,
       title: title,
       subtitle: subtitle,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 60
       },
       __self: this
     });
   }, [showBackLink, title, subtitle]);
-  var footerElement = react__WEBPACK_IMPORTED_MODULE_1__["useMemo"](function () {
-    return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](PageFooter, {
+  var footerElement = react__WEBPACK_IMPORTED_MODULE_2__["useMemo"](function () {
+    return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](PageFooter, {
       layoutStyle: layoutStyle,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61
+        lineNumber: 69
       },
       __self: this
     });
   }, [layoutStyle]);
-  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
+  return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
     ref: sizeRef,
     style: styles.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 73
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["ScrollView"], {
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["ScrollView"], {
     contentContainerStyle: styles.wrapper,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 74
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
     style: [layoutStyle, styles.header],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 75
     },
     __self: this
-  }, headerElement), react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
+  }, headerElement), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
     style: [layoutStyle, styles.children],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 76
     },
     __self: this
   }, children)), footerElement);
 };
 var PageFooter = function PageFooter(_ref2) {
   var layoutStyle = _ref2.layoutStyle;
-  var styles = ui__WEBPACK_IMPORTED_MODULE_4__["useStyles"](function (theme) {
+  var styles = ui__WEBPACK_IMPORTED_MODULE_5__["useStyles"](function (theme) {
     return {
       root: {
         alignItems: 'center',
@@ -64807,51 +64817,51 @@ var PageFooter = function PageFooter(_ref2) {
       }
     };
   });
-  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
+  return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
     style: styles.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 109
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
     style: [styles.wrapper, layoutStyle],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 110
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
     style: styles.credit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 111
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["Text"], {
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["Text"], {
     style: styles.creditText,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 112
     },
     __self: this
-  }, "by ANDREY", react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["Text"], {
+  }, "by ANDREY", react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["Text"], {
     style: styles.creditTextEm,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 113
     },
     __self: this
-  }, "POPP"))), react__WEBPACK_IMPORTED_MODULE_1__["createElement"](ui__WEBPACK_IMPORTED_MODULE_4__["ThemeSwitch"], {
+  }, "POPP"))), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](ui__WEBPACK_IMPORTED_MODULE_5__["ThemeSwitch"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 116
     },
     __self: this
   })));
 };
 var Logo = function Logo() {
-  var styles = ui__WEBPACK_IMPORTED_MODULE_4__["useStyles"](function (theme) {
+  var styles = ui__WEBPACK_IMPORTED_MODULE_5__["useStyles"](function (theme) {
     return {
       titleText: {
         color: theme.titleColor,
@@ -64865,18 +64875,18 @@ var Logo = function Logo() {
       }
     };
   });
-  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["Text"], {
+  return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react__WEBPACK_IMPORTED_MODULE_2__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["Text"], {
     style: styles.titleText,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 137
     },
     __self: this
-  }, "ANDREY"), react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["Text"], {
+  }, "ANDREY"), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["Text"], {
     style: styles.titleTextBold,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 138
     },
     __self: this
   }, "POPP"));
@@ -64885,7 +64895,7 @@ var PageHeader = function PageHeader(_ref3) {
   var title = _ref3.title,
       subtitle = _ref3.subtitle,
       showBackLink = _ref3.showBackLink;
-  var styles = ui__WEBPACK_IMPORTED_MODULE_4__["useStyles"](function (theme) {
+  var styles = ui__WEBPACK_IMPORTED_MODULE_5__["useStyles"](function (theme) {
     return {
       root: {
         paddingTop: 50,
@@ -64919,51 +64929,51 @@ var PageHeader = function PageHeader(_ref3) {
   var titleElement = null;
 
   if (title != null) {
-    titleElement = react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["Text"], {
+    titleElement = react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["Text"], {
       style: styles.titleText,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 175
+        lineNumber: 183
       },
       __self: this
     }, title);
   } else {
-    titleElement = react__WEBPACK_IMPORTED_MODULE_1__["createElement"](Logo, {
+    titleElement = react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Logo, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 177
+        lineNumber: 185
       },
       __self: this
     });
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
+  return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
     style: styles.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180
+      lineNumber: 188
     },
     __self: this
-  }, showBackLink ? react__WEBPACK_IMPORTED_MODULE_1__["createElement"](ui__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+  }, showBackLink ? react__WEBPACK_IMPORTED_MODULE_2__["createElement"](ui__WEBPACK_IMPORTED_MODULE_5__["Link"], {
     href: "/",
     style: styles.backLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 182
+      lineNumber: 190
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_feather__WEBPACK_IMPORTED_MODULE_3__["ArrowLeft"], {
+  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_feather__WEBPACK_IMPORTED_MODULE_4__["ArrowLeft"], {
     size: 18,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 183
+      lineNumber: 191
     },
     __self: this
-  }), " back home") : null, react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_2__["View"], {
+  }), " back home") : null, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
     style: styles.titleRoot,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 186
+      lineNumber: 194
     },
     __self: this
   }, titleElement), subtitle);
@@ -65767,14 +65777,14 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ "dll-reference dll_fbfdd5333204b8b31297":
+/***/ "dll-reference dll_9b549f1a9ec25a08a85a":
 /*!*******************************************!*\
-  !*** external "dll_fbfdd5333204b8b31297" ***!
+  !*** external "dll_9b549f1a9ec25a08a85a" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_fbfdd5333204b8b31297;
+module.exports = dll_9b549f1a9ec25a08a85a;
 
 /***/ })
 
