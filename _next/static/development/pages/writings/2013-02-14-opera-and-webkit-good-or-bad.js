@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/writings/2013-02-14-opera-and-webkit-good-or-bad.js"],{
 
 /***/ "../node_modules/@babel/runtime-corejs2/core-js/array/from.js":
 /*!********************************************************************!*\
@@ -9056,21 +9056,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwritings%2F2013-11-09-recreating-core-async-tutorial-with-es6-generators&absolutePagePath=%2FUsers%2Fandreypopp%2FWorkspace%2Fandreypopp.com%2Fsite%2Fpages%2Fwritings%2F2013-11-09-recreating-core-async-tutorial-with-es6-generators.md!./":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwritings%2F2013-11-09-recreating-core-async-tutorial-with-es6-generators&absolutePagePath=%2FUsers%2Fandreypopp%2FWorkspace%2Fandreypopp.com%2Fsite%2Fpages%2Fwritings%2F2013-11-09-recreating-core-async-tutorial-with-es6-generators.md ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwritings%2F2013-02-14-opera-and-webkit-good-or-bad&absolutePagePath=%2FUsers%2Fandreypopp%2FWorkspace%2Fandreypopp.com%2Fsite%2Fpages%2Fwritings%2F2013-02-14-opera-and-webkit-good-or-bad.md!./":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwritings%2F2013-02-14-opera-and-webkit-good-or-bad&absolutePagePath=%2FUsers%2Fandreypopp%2FWorkspace%2Fandreypopp.com%2Fsite%2Fpages%2Fwritings%2F2013-02-14-opera-and-webkit-good-or-bad.md ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators", function() {
-      var page = __webpack_require__(/*! ./pages/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators.md */ "./pages/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators.md")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/writings/2013-02-14-opera-and-webkit-good-or-bad", function() {
+      var page = __webpack_require__(/*! ./pages/writings/2013-02-14-opera-and-webkit-good-or-bad.md */ "./pages/writings/2013-02-14-opera-and-webkit-good-or-bad.md")
       if(true) {
-        module.hot.accept(/*! ./pages/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators.md */ "./pages/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators.md", function() {
-          if(!next.router.components["/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators.md */ "./pages/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators.md")
-          next.router.update("/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/writings/2013-02-14-opera-and-webkit-good-or-bad.md */ "./pages/writings/2013-02-14-opera-and-webkit-good-or-bad.md", function() {
+          if(!next.router.components["/writings/2013-02-14-opera-and-webkit-good-or-bad"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/writings/2013-02-14-opera-and-webkit-good-or-bad.md */ "./pages/writings/2013-02-14-opera-and-webkit-good-or-bad.md")
+          next.router.update("/writings/2013-02-14-opera-and-webkit-good-or-bad", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -65351,10 +65351,10 @@ var Section = function Section(props) {
 
 /***/ }),
 
-/***/ "./pages/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators.md":
-/*!*****************************************************************************************!*\
-  !*** ./pages/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators.md ***!
-  \*****************************************************************************************/
+/***/ "./pages/writings/2013-02-14-opera-and-webkit-good-or-bad.md":
+/*!*******************************************************************!*\
+  !*** ./pages/writings/2013-02-14-opera-and-webkit-good-or-bad.md ***!
+  \*******************************************************************/
 /*! exports provided: title, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -65370,7 +65370,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Post */ "./Post.js");
 
 
-var _jsxFileName = "/Users/andreypopp/Workspace/andreypopp.com/site/pages/writings/2013-11-09-recreating-core-async-tutorial-with-es6-generators.md";
+var _jsxFileName = "/Users/andreypopp/Workspace/andreypopp.com/site/pages/writings/2013-02-14-opera-and-webkit-good-or-bad.md";
 
 /* @jsx mdx */
 
@@ -65378,7 +65378,7 @@ var _jsxFileName = "/Users/andreypopp/Workspace/andreypopp.com/site/pages/writin
 /* @jsx mdx */
 
 
-var title = "Recreating core.async tutorial with ES6 generators";
+var title = "Opera + WebKit: good or bad?";
 
 var makeShortcode = function makeShortcode(name) {
   return function MDXDefaultShortcode(props) {
@@ -65415,730 +65415,47 @@ function MDXContent(_ref) {
       lineNumber: 25
     },
     __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, "Opera ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     parentName: "p"
   }, {
-    "href": "https://twitter.com/swannodette"
+    "href": "http://my.opera.com/ODIN/blog/300-million-users-and-move-to-webkit"
   }, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
     },
     __self: this
-  }), "David Nolen"), " publishes excellent ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "https://github.com/clojure/clojurescript"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }), "ClojureScript"), " tutorials on his\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "http://swannodette.github.io/"
-  }, {
+  }), "plans"), " to abandon development of their own HTML rendering\nengine and JavaScript virtual machine and switch to Chromium which effectively\nmeans WebKit for HTML rendering and V8 for JavaScript execution."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }), "blog"), "."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Good or bad? It depends, I think."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 31
     },
     __self: this
-  }, "ClojureScript is a Clojure compiler which targets JavaScript runtimes and thus\nallows running Clojure code in a browser. One of its main selling points is\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "http://clojure.github.io/core.async/"
-  }, {
+  }, "Given all the standartization efforts put in Web technologies it would be\nnatural to expect some kind of baseline reference implementation to emerge,\nWebKit isn't a bad choice for that."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
-  }), "core.async"), " library which hugely simplifies working with async operations."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "To rephrase that \u2014 I don't think that implementation of Web standards is the\nonly field for browser vendors to compete in \u2014 so sharing common codebase for\nHTML rendering is a good idea."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: this
-  }, "The last published tutorial by David named ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "http://swannodette.github.io/2013/11/07/clojurescript-101/"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }), "\"ClojureScript 101\""), " is about how\nto use core.async to make a little web app to search Wikipedia."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Some people think that browser monopoly can hurt the Web ecosystem and provide\n\"IE6 domination\" case as an example. But... there is no browser monopoly on a\nhorizon \u2014 that's only about browser engines \u2014 and, as I've said already, browsers\nshould not compete in a \"best Web standards implementation\" but rather in\nproviding best user experience."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
     },
     __self: this
-  }, "Use of core.async makes working with async values and operations (events and XHR\ncalls) a joy \u2014 clean code and no callback spaghettis."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }, "In this blog post I'll try to replicate the tutorial by using pure JavaScript\nwith ES6 generators instead."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
-  }, "While ES6 generators are not yet available in browsers we are going to use\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "http://facebook.github.io/regenerator/"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }), "regenerator"), " transpiler developed by Facebook. It transforms each generator\nfound in the source code into a  state machine while preserving the semantics of\nthe former."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
-  }, "So let's start with creating an ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
-  }, "index.html"), " HTML page which will host our application:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
-    },
-    __self: this
-  }), "<!doctype html>\n<input id=\"query\" type=\"text\"></input>\n<button id=\"search\">Search</button>\n<div id=\"results\"></div>\n<script src=\"bundle.js\"></script>\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: this
-  }, "As you can see, the app is going to be pretty simple \u2014 when user clicks on a\nbutton with the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }, "search"), " id, app reads current query from the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }, "query"), " input, calls\nWikipedia API and renders results in to the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, "results"), " container."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }, "Initial setup"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: this
-  }, "While ClojureScript makes entire Google Closure library available for use in\nyour application, we are going to use some libraries from npm instead."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: this
-  }, "The obvious way to use npm packages to develop a browser app is to use\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "http://browserify.org"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: this
-  }), "browserify"), ". We also need a browserify transform which would process our\nsources through regenerator transpiler. Such transform is called\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "https://github.com/amiorin/regeneratorify"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }), "regeneratorify"), " and could be also installed through npm:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }), "% npm install browserify regeneratorify\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: this
-  }, "We are going to put our code in ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: this
-  }, "index.js"), " file and have it compiled with\nbrowserify into ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    },
-    __self: this
-  }, "bundle.js"), " which will be picked up ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    },
-    __self: this
-  }, "index.html"), " page."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
-  }, "To bundle our code you run the following command:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: this
-  }), "% ./node_modules/.bin/browserify -t regeneratorify ./index.js > bundle.js\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80
-    },
-    __self: this
-  }, "Instead of running this command manually every time we change some code, let's\nwrite a simple Makefile instead:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82
-    },
-    __self: this
-  }), "watch:\n  watch -n0.5 $(MAKE) bundle.js\n\nbundle.js: index.js\n  ./node_modules/.bin/browserify -t regeneratorify $< > $@\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88
-    },
-    __self: this
-  }, "This just tells that ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88
-    },
-    __self: this
-  }, "bundle.js"), " depends on ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88
-    },
-    __self: this
-  }, "index.js"), " (it allow ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88
-    },
-    __self: this
-  }, "make"), " to know\nthat we should rebuild ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89
-    },
-    __self: this
-  }, "bundle.js"), " only if ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89
-    },
-    __self: this
-  }, "index.js"), " was modified by comparing\nmtimes of both)."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91
-    },
-    __self: this
-  }, "Now just open ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91
-    },
-    __self: this
-  }, "index.html"), " in a browser, run"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 92
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 92
-    },
-    __self: this
-  }), "% make watch\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    },
-    __self: this
-  }, "forget about it \u2014 ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    },
-    __self: this
-  }, "bundle.js"), " will always contain the latest version of code."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95
-    },
-    __self: this
-  }, "It it doesn't work, you probably doesn't have ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95
-    },
-    __self: this
-  }, "watch"), " utility installed, install\nit via ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: this
-  }, "brew install watch"), " if you are running Mac OS X. I think most Linux\ndistributions have this utility installed out of the box, if not, consult your\npackage manager."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 99
-    },
-    __self: this
-  }, "Events as infinite generators"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 100
-    },
-    __self: this
-  }, "We are going to listen for events in an unusual way."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 101
-    },
-    __self: this
-  }, "We create a generator function which would create for us infinite generators of\nevents of type ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 102
-    },
-    __self: this
-  }, "evType"), " occurred on DOM element ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 102
-    },
-    __self: this
-  }, "el"), ":"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 103
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 103
-    },
-    __self: this
-  }), "function *listen(el, evType) {\n  while (true)\n    yield function(cb) {\n      var fire = function(ev) {\n        el.removeEventListener(evType, fire);\n        cb(null, ev);\n      }\n      el.addEventListener(evType, fire);\n    }\n}\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114
-    },
-    __self: this
-  }, "Note that created generators will yield functions which take a single ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114
-    },
-    __self: this
-  }, "cb"), "\n(callback) argument. We call such functions continuables, they represent some\nvalue which will be available in the future."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 117
-    },
-    __self: this
-  }, "We need a special way to run such generators, let's talk shortly about that."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 118
-    },
-    __self: this
-  }, "Note also that we're using the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 118
-    },
-    __self: this
-  }, "while(true)"), " loop. This won't cause any\ndifficulties for us like hogging our CPU on meaningless computations. Generators\nsuspend on ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 120
-    },
-    __self: this
-  }, "yield"), " and the way we are going to run them does guarantee that we\nwill resume a generator only when its consumer is ready to handle another event."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 122
-    },
-    __self: this
-  }, "For running async generators there's excellent ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "https://github.com/Raynos/gens"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 122
-    },
-    __self: this
-  }), "gens"), " library which supports\nthe notion of continuables out of the box. Install it via npm:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126
-    },
-    __self: this
-  }), "% npm install gens\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 128
-    },
-    __self: this
-  }, "Let's do some demo code which will consume ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 128
-    },
-    __self: this
-  }, "click"), " events from a generator\ncreated with ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 129
-    },
-    __self: this
-  }, "listen"), " and log them to browser's console:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 130
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 130
-    },
-    __self: this
-  }), "var gens = require('gens');\n\nfunction go(gen) {\n  gens(gen)(function(err) { if (err) throw err; });\n}\n\ngo(function*() {\n  var clicks = listen(document.getElementById('search'), 'click');\n\n  while (true) {\n    // wait for click event and log it\n    console.log(yield clicks.next().value);\n  }\n});\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145
-    },
-    __self: this
-  }, "After refreshing page in the browser you should see ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145
-    },
-    __self: this
-  }, "MouseEvent"), "s logged in the\nconsole when clicking on the button."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 147
-    },
-    __self: this
-  }, "Fetching search results"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 148
-    },
-    __self: this
-  }, "Now that we can listen for events let's write a final piece of code to search\nand render results."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 150
-    },
-    __self: this
-  }, "We are going to use ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 150
-    },
-    __self: this
-  }, "jsonp"), " library from npm to call Wikipedia API:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 151
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 151
-    },
-    __self: this
-  }), "% npm install jsonp\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 153
-    },
-    __self: this
-  }, "Now we write a ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 153
-    },
-    __self: this
-  }, "fetch"), " function which partially applies ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 153
-    },
-    __self: this
-  }, "jsonp"), " to search query\nand so returns a function which accepts just a single callback argument \u2014 that\nway we create continuables to use later with generators."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 156
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 156
-    },
-    __self: this
-  }), "var jsonp = require('jsonp');\n\nfunction fetch(url) {\n  return jsonp.bind(null, url);\n}\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 162
-    },
-    __self: this
-  }, "We also need a function to render an array of results into DOM:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 163
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 163
-    },
-    __self: this
-  }), "function render(el, items) {\n  var items = items.map(function(item) {\n    return '<li>' + item + '</li>';\n  });\n  el.innerHTML = '<ul>' + items.join('');  + '</ul>';\n}\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 170
-    },
-    __self: this
-  }, "For this tutorial we just stick with basic ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 170
-    },
-    __self: this
-  }, "innerHTML"), " manipulation and string\nconcatenation.  For the real application I recommend using excellent ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "http://reactjs.org"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 171
-    },
-    __self: this
-  }), "React"), "\nlibrary, also developed by Facebook."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 175
-    },
-    __self: this
-  }, "Now the final part is just to glue these functions inside the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 175
-    },
-    __self: this
-  }, "go"), " block we\nwrote earlier:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 177
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 177
-    },
-    __self: this
-  }), "go(function*() {\n  var results = document.getElementById('results');\n  var query = document.getElementById('query');\n  var clicks = listen(document.getElementById('search'), 'click');\n\n  while (true) {\n    yield clicks.next().value; // wait for 'click' event\n\n    var url = 'http://en.wikipedia.org/w/api.php' +\n      '?action=opensearch&format=json&search=' +\n      encodeURIComponent(query.value);\n\n    var data = yield fetch(url);\n    render(results, data[1]);\n  }\n});\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 194
-    },
-    __self: this
-  }, "That's all! Refresh the page in the browser, enter some query into the input\nelement and click on the button \u2014 after some time (needed to call Wikipedia\nAPI) results will appear on the page."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 197
-    },
-    __self: this
-  }, "Note that we didn't use any callbacks to specify the behaviour of our\napplication. Furthermore, I believe, this approach scales well on more complex\napps."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 200
-    },
-    __self: this
-  }, "Complete code"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 201
-    },
-    __self: this
-  }, "The complete code listing which is also available as a ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "https://gist.github.com/andreypopp/7385755"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 201
-    },
-    __self: this
-  }), "gist"), ":"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 204
-    },
-    __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {}, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 204
-    },
-    __self: this
-  }), "var jsonp = require('jsonp');\nvar gens = require('gens');\n\nfunction *listen(el, evType) {\n  while (true)\n    yield function(cb) {\n      var fire = function(ev) {\n        el.removeEventListener(evType, fire);\n        cb(null, ev);\n      }\n      el.addEventListener(evType, fire);\n    }\n}\n\nfunction fetch(url) {\n  return jsonp.bind(null, url);\n}\n\nfunction render(el, items) {\n  var items = items.map(function(item) {\n    return '<li>' + item + '</li>';\n  });\n  el.innerHTML = '<ul>' + items.join('');  + '</ul>';\n}\n\nfunction go(gen) {\n  gens(gen)(function(err) { if (err) throw err; });\n}\n\ngo(function*() {\n  var results = document.getElementById('results');\n  var query = document.getElementById('query');\n  var clicks = listen(document.getElementById('search'), 'click');\n\n  while (true) {\n    yield clicks.next().value; // wait for 'click' event\n\n    var url = 'http://en.wikipedia.org/w/api.php' +\n      '?action=opensearch&format=json&search=' +\n      encodeURIComponent(query.value);\n\n    var data = yield fetch(url);\n    render(results, data[1]);\n  }\n});\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 250
-    },
-    __self: this
-  }, "It's even comparable in LOC to the original core.async tutorial code, which is\nsurprising, given the expressiveness of Clojure."));
+  }, "Luckily for browser vendors \u2014 there's still a huge gap between Web and so-called\n\"native\" applications (and vice-versa of course) \u2014 so there's a lot of work to\nbe done on that side."));
 }
 MDXContent.isMDXComponent = true;
 
@@ -66566,14 +65883,14 @@ module.exports = [{
 
 /***/ }),
 
-/***/ 3:
-/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fwritings%2F2013-11-09-recreating-core-async-tutorial-with-es6-generators&absolutePagePath=%2FUsers%2Fandreypopp%2FWorkspace%2Fandreypopp.com%2Fsite%2Fpages%2Fwritings%2F2013-11-09-recreating-core-async-tutorial-with-es6-generators.md ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ 9:
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fwritings%2F2013-02-14-opera-and-webkit-good-or-bad&absolutePagePath=%2FUsers%2Fandreypopp%2FWorkspace%2Fandreypopp.com%2Fsite%2Fpages%2Fwritings%2F2013-02-14-opera-and-webkit-good-or-bad.md ***!
+  \********************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fwritings%2F2013-11-09-recreating-core-async-tutorial-with-es6-generators&absolutePagePath=%2FUsers%2Fandreypopp%2FWorkspace%2Fandreypopp.com%2Fsite%2Fpages%2Fwritings%2F2013-11-09-recreating-core-async-tutorial-with-es6-generators.md! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwritings%2F2013-11-09-recreating-core-async-tutorial-with-es6-generators&absolutePagePath=%2FUsers%2Fandreypopp%2FWorkspace%2Fandreypopp.com%2Fsite%2Fpages%2Fwritings%2F2013-11-09-recreating-core-async-tutorial-with-es6-generators.md!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fwritings%2F2013-02-14-opera-and-webkit-good-or-bad&absolutePagePath=%2FUsers%2Fandreypopp%2FWorkspace%2Fandreypopp.com%2Fsite%2Fpages%2Fwritings%2F2013-02-14-opera-and-webkit-good-or-bad.md! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwritings%2F2013-02-14-opera-and-webkit-good-or-bad&absolutePagePath=%2FUsers%2Fandreypopp%2FWorkspace%2Fandreypopp.com%2Fsite%2Fpages%2Fwritings%2F2013-02-14-opera-and-webkit-good-or-bad.md!./");
 
 
 /***/ }),
@@ -66589,5 +65906,5 @@ module.exports = dll_9b549f1a9ec25a08a85a;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=2013-11-09-recreating-core-async-tutorial-with-es6-generators.js.map
+},[[9,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=2013-02-14-opera-and-webkit-good-or-bad.js.map

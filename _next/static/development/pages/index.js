@@ -65465,17 +65465,11 @@ var WritingsArchive = function WritingsArchive(_ref2) {
       lineNumber: 127
     },
     __self: this
-  }, "You can follow me on ", twitter, " which is mostly about tech. If you have something to say to me directly you can reach me via ", email, "."), react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 131
-    },
-    __self: this
-  }, "The list of my current interests include: Reason/OCaml, query languages, end-user programming, development tooling, programming language theory, vim/neovim, ..."))), react__WEBPACK_IMPORTED_MODULE_1__["createElement"](WritingsArchive, {
+  }, "You can follow me on ", twitter, " which is mostly about tech. If you have something to say to me directly you can reach me via ", email, "."))), react__WEBPACK_IMPORTED_MODULE_1__["createElement"](WritingsArchive, {
     writings: writingsIndex,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 133
     },
     __self: this
   }));
