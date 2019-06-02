@@ -44,6 +44,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/is-iterable */ "../n
 
 /***/ }),
 
+/***/ "../node_modules/@babel/runtime-corejs2/core-js/map.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/core-js/map.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/map */ "../node_modules/core-js/library/fn/map.js");
+
+/***/ }),
+
 /***/ "../node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
 /*!***********************************************************************!*\
   !*** ../node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
@@ -1674,6 +1685,25 @@ module.exports = __webpack_require__(/*! ../modules/core.get-iterator */ "../nod
 __webpack_require__(/*! ../modules/web.dom.iterable */ "../node_modules/core-js/library/modules/web.dom.iterable.js");
 __webpack_require__(/*! ../modules/es6.string.iterator */ "../node_modules/core-js/library/modules/es6.string.iterator.js");
 module.exports = __webpack_require__(/*! ../modules/core.is-iterable */ "../node_modules/core-js/library/modules/core.is-iterable.js");
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/fn/map.js":
+/*!*************************************************!*\
+  !*** ../node_modules/core-js/library/fn/map.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../modules/es6.object.to-string */ "../node_modules/core-js/library/modules/es6.object.to-string.js");
+__webpack_require__(/*! ../modules/es6.string.iterator */ "../node_modules/core-js/library/modules/es6.string.iterator.js");
+__webpack_require__(/*! ../modules/web.dom.iterable */ "../node_modules/core-js/library/modules/web.dom.iterable.js");
+__webpack_require__(/*! ../modules/es6.map */ "../node_modules/core-js/library/modules/es6.map.js");
+__webpack_require__(/*! ../modules/es7.map.to-json */ "../node_modules/core-js/library/modules/es7.map.to-json.js");
+__webpack_require__(/*! ../modules/es7.map.of */ "../node_modules/core-js/library/modules/es7.map.of.js");
+__webpack_require__(/*! ../modules/es7.map.from */ "../node_modules/core-js/library/modules/es7.map.from.js");
+module.exports = __webpack_require__(/*! ../modules/_core */ "../node_modules/core-js/library/modules/_core.js").Map;
 
 
 /***/ }),
@@ -4380,6 +4410,37 @@ addToUnscopables('entries');
 
 /***/ }),
 
+/***/ "../node_modules/core-js/library/modules/es6.map.js":
+/*!**********************************************************!*\
+  !*** ../node_modules/core-js/library/modules/es6.map.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var strong = __webpack_require__(/*! ./_collection-strong */ "../node_modules/core-js/library/modules/_collection-strong.js");
+var validate = __webpack_require__(/*! ./_validate-collection */ "../node_modules/core-js/library/modules/_validate-collection.js");
+var MAP = 'Map';
+
+// 23.1 Map Objects
+module.exports = __webpack_require__(/*! ./_collection */ "../node_modules/core-js/library/modules/_collection.js")(MAP, function (get) {
+  return function Map() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
+}, {
+  // 23.1.3.6 Map.prototype.get(key)
+  get: function get(key) {
+    var entry = strong.getEntry(validate(this, MAP), key);
+    return entry && entry.v;
+  },
+  // 23.1.3.9 Map.prototype.set(key, value)
+  set: function set(key, value) {
+    return strong.def(validate(this, MAP), key === 0 ? 0 : key, value);
+  }
+}, strong, true);
+
+
+/***/ }),
+
 /***/ "../node_modules/core-js/library/modules/es6.object.assign.js":
 /*!********************************************************************!*\
   !*** ../node_modules/core-js/library/modules/es6.object.assign.js ***!
@@ -5173,6 +5234,47 @@ setToStringTag($Symbol, 'Symbol');
 setToStringTag(Math, 'Math', true);
 // 24.3.3 JSON[@@toStringTag]
 setToStringTag(global.JSON, 'JSON', true);
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/es7.map.from.js":
+/*!***************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/es7.map.from.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-map.from
+__webpack_require__(/*! ./_set-collection-from */ "../node_modules/core-js/library/modules/_set-collection-from.js")('Map');
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/es7.map.of.js":
+/*!*************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/es7.map.of.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-map.of
+__webpack_require__(/*! ./_set-collection-of */ "../node_modules/core-js/library/modules/_set-collection-of.js")('Map');
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/library/modules/es7.map.to-json.js":
+/*!******************************************************************!*\
+  !*** ../node_modules/core-js/library/modules/es7.map.to-json.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/DavidBruant/Map-Set.prototype.toJSON
+var $export = __webpack_require__(/*! ./_export */ "../node_modules/core-js/library/modules/_export.js");
+
+$export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(/*! ./_collection-to-json */ "../node_modules/core-js/library/modules/_collection-to-json.js")('Map') });
 
 
 /***/ }),
@@ -65120,13 +65222,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "../node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "../node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_native_web__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-native-web */ "../node_modules/react-native-web/dist/index.js");
-/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-feather */ "../node_modules/react-feather/dist/index.js");
-/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_feather__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ui */ "../node_modules/ui/index.js");
-/* harmony import */ var ui_Style__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ui/Style */ "../node_modules/ui/Style.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/map */ "../node_modules/@babel/runtime-corejs2/core-js/map.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_map__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_map__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_native_web__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-native-web */ "../node_modules/react-native-web/dist/index.js");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-feather */ "../node_modules/react-feather/dist/index.js");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_feather__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ui */ "../node_modules/ui/index.js");
+/* harmony import */ var ui_Style__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ui/Style */ "../node_modules/ui/Style.js");
+
 
 
 var _jsxFileName = "/Users/andreypopp/Workspace/andreypopp.com/site/Page.js";
@@ -65135,34 +65240,33 @@ var _jsxFileName = "/Users/andreypopp/Workspace/andreypopp.com/site/Page.js";
 
 
 
-
-var useLayoutStyle = function useLayoutStyle() {};
-
+var scrollPositionByPath = new _babel_runtime_corejs2_core_js_map__WEBPACK_IMPORTED_MODULE_2___default.a();
 var Page = function Page(_ref) {
   var children = _ref.children,
       title = _ref.title,
       subtitle = _ref.subtitle,
+      shouldRestoreScrollPosition = _ref.shouldRestoreScrollPosition,
       showBackLink = _ref.showBackLink;
 
-  var _UI$useDOMSize = ui__WEBPACK_IMPORTED_MODULE_5__["useDOMSize"](),
+  var _UI$useDOMSize = ui__WEBPACK_IMPORTED_MODULE_6__["useDOMSize"](),
       _UI$useDOMSize2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_UI$useDOMSize, 2),
       size = _UI$useDOMSize2[0],
       sizeRef = _UI$useDOMSize2[1];
 
   var isWideScreen = size != null && size.width > 700;
-  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     if (title) {
       document.title = _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(title) ? title.join() : title;
     } else {
       document.title = "@andreypopp";
     }
   }, [title]);
-  var layoutStyle = ui__WEBPACK_IMPORTED_MODULE_5__["useStyle"](function (theme) {
+  var layoutStyle = ui__WEBPACK_IMPORTED_MODULE_6__["useStyle"](function (theme) {
     return {
       width: isWideScreen ? 700 : 350
     };
   }, [isWideScreen]);
-  var styles = ui__WEBPACK_IMPORTED_MODULE_5__["useStyles"](function (theme) {
+  var styles = ui__WEBPACK_IMPORTED_MODULE_6__["useStyles"](function (theme) {
     return {
       root: {
         backgroundColor: theme.backgroundColor,
@@ -65181,62 +65285,87 @@ var Page = function Page(_ref) {
       }
     };
   });
-  var headerElement = react__WEBPACK_IMPORTED_MODULE_2__["useMemo"](function () {
-    return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](PageHeader, {
+  var headerElement = react__WEBPACK_IMPORTED_MODULE_3__["useMemo"](function () {
+    return react__WEBPACK_IMPORTED_MODULE_3__["createElement"](PageHeader, {
       showBackLink: showBackLink,
       title: title,
       subtitle: subtitle,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 62
       },
       __self: this
     });
   }, [showBackLink, title, subtitle]);
-  var footerElement = react__WEBPACK_IMPORTED_MODULE_2__["useMemo"](function () {
-    return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](PageFooter, {
+  var footerElement = react__WEBPACK_IMPORTED_MODULE_3__["useMemo"](function () {
+    return react__WEBPACK_IMPORTED_MODULE_3__["createElement"](PageFooter, {
       layoutStyle: layoutStyle,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 71
       },
       __self: this
     });
   }, [layoutStyle]);
-  return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
+  var scrollerRef = react__WEBPACK_IMPORTED_MODULE_3__["useRef"](null);
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
+    if (scrollPositionByPath.has(window.location.pathname)) {
+      var offsetY = scrollPositionByPath.get(window.location.pathname);
+
+      if (shouldRestoreScrollPosition) {
+        if (scrollerRef.current != null) {
+          scrollerRef.current.scrollTo({
+            y: offsetY,
+            x: 0,
+            animated: false
+          });
+        }
+      } else {
+        scrollPositionByPath.set(window.location.pathname, 0);
+      }
+    }
+  }, []);
+  var onScroll = react__WEBPACK_IMPORTED_MODULE_3__["useCallback"](function (e) {
+    var offsetY = e.nativeEvent.contentOffset.y;
+    scrollPositionByPath.set(window.location.pathname, offsetY);
+  });
+  return react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["View"], {
     ref: sizeRef,
     style: styles.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 95
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["ScrollView"], {
+  }, react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["ScrollView"], {
+    ref: scrollerRef,
+    scrollEventThrottle: 100,
+    onScroll: onScroll,
     contentContainerStyle: styles.wrapper,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 96
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
+  }, react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["View"], {
     style: [layoutStyle, styles.header],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 102
     },
     __self: this
-  }, headerElement), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
+  }, headerElement), react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["View"], {
     style: [layoutStyle, styles.children],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 103
     },
     __self: this
   }, children)), footerElement);
 };
 var PageFooter = function PageFooter(_ref2) {
   var layoutStyle = _ref2.layoutStyle;
-  var styles = ui__WEBPACK_IMPORTED_MODULE_5__["useStyles"](function (theme) {
+  var styles = ui__WEBPACK_IMPORTED_MODULE_6__["useStyles"](function (theme) {
     return {
       root: {
         alignItems: 'center',
@@ -65262,51 +65391,51 @@ var PageFooter = function PageFooter(_ref2) {
       }
     };
   });
-  return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
+  return react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["View"], {
     style: styles.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 136
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
+  }, react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["View"], {
     style: [styles.wrapper, layoutStyle],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 137
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
+  }, react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["View"], {
     style: styles.credit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 138
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["Text"], {
+  }, react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["Text"], {
     style: styles.creditText,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 139
     },
     __self: this
-  }, "by ANDREY", react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["Text"], {
+  }, "by ANDREY", react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["Text"], {
     style: styles.creditTextEm,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 140
     },
     __self: this
-  }, "POPP"))), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](ui__WEBPACK_IMPORTED_MODULE_5__["ThemeSwitch"], {
+  }, "POPP"))), react__WEBPACK_IMPORTED_MODULE_3__["createElement"](ui__WEBPACK_IMPORTED_MODULE_6__["ThemeSwitch"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 143
     },
     __self: this
   })));
 };
 var Logo = function Logo() {
-  var styles = ui__WEBPACK_IMPORTED_MODULE_5__["useStyles"](function (theme) {
+  var styles = ui__WEBPACK_IMPORTED_MODULE_6__["useStyles"](function (theme) {
     return {
       titleText: {
         color: theme.titleColor,
@@ -65320,18 +65449,18 @@ var Logo = function Logo() {
       }
     };
   });
-  return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react__WEBPACK_IMPORTED_MODULE_2__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["Text"], {
+  return react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react__WEBPACK_IMPORTED_MODULE_3__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["Text"], {
     style: styles.titleText,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 164
     },
     __self: this
-  }, "ANDREY"), react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["Text"], {
+  }, "ANDREY"), react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["Text"], {
     style: styles.titleTextBold,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 165
     },
     __self: this
   }, "POPP"));
@@ -65340,7 +65469,7 @@ var PageHeader = function PageHeader(_ref3) {
   var title = _ref3.title,
       subtitle = _ref3.subtitle,
       showBackLink = _ref3.showBackLink;
-  var styles = ui__WEBPACK_IMPORTED_MODULE_5__["useStyles"](function (theme) {
+  var styles = ui__WEBPACK_IMPORTED_MODULE_6__["useStyles"](function (theme) {
     return {
       root: {
         paddingTop: 50,
@@ -65374,51 +65503,51 @@ var PageHeader = function PageHeader(_ref3) {
   var titleElement = null;
 
   if (title != null) {
-    titleElement = react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["Text"], {
+    titleElement = react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["Text"], {
       style: styles.titleText,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 183
+        lineNumber: 210
       },
       __self: this
     }, title);
   } else {
-    titleElement = react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Logo, {
+    titleElement = react__WEBPACK_IMPORTED_MODULE_3__["createElement"](Logo, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 185
+        lineNumber: 212
       },
       __self: this
     });
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
+  return react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["View"], {
     style: styles.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188
+      lineNumber: 215
     },
     __self: this
-  }, showBackLink ? react__WEBPACK_IMPORTED_MODULE_2__["createElement"](ui__WEBPACK_IMPORTED_MODULE_5__["Link"], {
+  }, showBackLink ? react__WEBPACK_IMPORTED_MODULE_3__["createElement"](ui__WEBPACK_IMPORTED_MODULE_6__["Link"], {
     href: "/",
     style: styles.backLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190
+      lineNumber: 217
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_feather__WEBPACK_IMPORTED_MODULE_4__["ArrowLeft"], {
+  }, react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_feather__WEBPACK_IMPORTED_MODULE_5__["ArrowLeft"], {
     size: 18,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191
+      lineNumber: 218
     },
     __self: this
-  }), " back home") : null, react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_3__["View"], {
+  }), " back home") : null, react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_native_web__WEBPACK_IMPORTED_MODULE_4__["View"], {
     style: styles.titleRoot,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 194
+      lineNumber: 221
     },
     __self: this
   }, titleElement), subtitle);
@@ -65449,11 +65578,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var react_native_web__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-native-web */ "../node_modules/react-native-web/dist/index.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! next/app */ "../node_modules/next/app.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var ui__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ui */ "../node_modules/ui/index.js");
-/* harmony import */ var ui_Style__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ui/Style */ "../node_modules/ui/Style.js");
-/* harmony import */ var _Page__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../Page */ "./Page.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! next/router */ "../node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! next/app */ "../node_modules/next/app.js");
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var ui__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ui */ "../node_modules/ui/index.js");
+/* harmony import */ var ui_Style__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ui/Style */ "../node_modules/ui/Style.js");
+/* harmony import */ var _Page__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../Page */ "./Page.js");
 
 
 
@@ -65472,8 +65603,9 @@ var _jsxFileName = "/Users/andreypopp/Workspace/andreypopp.com/site/pages/_app.j
 
 
 
+
 function Preloader() {
-  var styles = ui__WEBPACK_IMPORTED_MODULE_13__["useStyles"](function (theme) {
+  var styles = ui__WEBPACK_IMPORTED_MODULE_14__["useStyles"](function (theme) {
     return {
       root: {
         backgroundColor: theme.backgroundColor,
@@ -65493,13 +65625,13 @@ function Preloader() {
     style: styles.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_10__["createElement"](_Page__WEBPACK_IMPORTED_MODULE_15__["Logo"], {
+  }, react__WEBPACK_IMPORTED_MODULE_10__["createElement"](_Page__WEBPACK_IMPORTED_MODULE_16__["Logo"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
   }));
@@ -65523,6 +65655,8 @@ function (_App) {
 
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(MyApp)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "shouldRestoreScrollPosition", false);
+
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "state", {
       loaded: false
     });
@@ -65538,53 +65672,70 @@ function (_App) {
           pageProps = _this$props.pageProps;
 
       if (!this.state.loaded) {
-        return react__WEBPACK_IMPORTED_MODULE_10__["createElement"](ui__WEBPACK_IMPORTED_MODULE_13__["WithTheme"], {
-          defaultTheme: ui__WEBPACK_IMPORTED_MODULE_13__["darkTheme"],
+        return react__WEBPACK_IMPORTED_MODULE_10__["createElement"](ui__WEBPACK_IMPORTED_MODULE_14__["WithTheme"], {
+          defaultTheme: ui__WEBPACK_IMPORTED_MODULE_14__["darkTheme"],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 49
+            lineNumber: 53
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_10__["createElement"](next_app__WEBPACK_IMPORTED_MODULE_12__["Container"], {
+        }, react__WEBPACK_IMPORTED_MODULE_10__["createElement"](next_app__WEBPACK_IMPORTED_MODULE_13__["Container"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 50
+            lineNumber: 54
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10__["createElement"](Preloader, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 51
+            lineNumber: 55
           },
           __self: this
         })));
       }
 
-      return react__WEBPACK_IMPORTED_MODULE_10__["createElement"](ui__WEBPACK_IMPORTED_MODULE_13__["WithTheme"], {
+      return react__WEBPACK_IMPORTED_MODULE_10__["createElement"](ui__WEBPACK_IMPORTED_MODULE_14__["WithTheme"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 62
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_10__["createElement"](next_app__WEBPACK_IMPORTED_MODULE_12__["Container"], {
+      }, react__WEBPACK_IMPORTED_MODULE_10__["createElement"](next_app__WEBPACK_IMPORTED_MODULE_13__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 63
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10__["createElement"](Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
+        shouldRestoreScrollPosition: this.shouldRestoreScrollPosition,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 64
         },
         __self: this
       }))));
     }
   }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      if (this.shouldRestoreScrollPosition) {
+        this.shouldRestoreScrollPosition = false;
+      }
+    }
+  }, {
     key: "componentDidMount",
     value: function componentDidMount() {
+      var _this2 = this;
+
       this.setState({
         loaded: true
+      });
+      next_router__WEBPACK_IMPORTED_MODULE_12___default.a.beforePopState(function (_ref) {
+        var url = _ref.url,
+            as = _ref.as,
+            options = _ref.options;
+        _this2.shouldRestoreScrollPosition = true;
+        return true;
       });
     }
   }], [{
@@ -65592,13 +65743,13 @@ function (_App) {
     value: function () {
       var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
       /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref) {
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref2) {
         var Component, ctx, pageProps;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                Component = _ref.Component, ctx = _ref.ctx;
+                Component = _ref2.Component, ctx = _ref2.ctx;
                 pageProps = {};
 
                 if (!Component.getInitialProps) {
@@ -65634,7 +65785,7 @@ function (_App) {
   }]);
 
   return MyApp;
-}(next_app__WEBPACK_IMPORTED_MODULE_12___default.a);
+}(next_app__WEBPACK_IMPORTED_MODULE_13___default.a);
 
 /* harmony default export */ __webpack_exports__["default"] = (MyApp);
 
