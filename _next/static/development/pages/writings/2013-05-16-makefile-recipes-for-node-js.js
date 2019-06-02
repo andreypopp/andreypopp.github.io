@@ -65067,7 +65067,7 @@ var Post = function Post(props) {
   }, "published on ", curr.date.year, "/", curr.date.month, "/", curr.date.day) : null;
   return react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_Page__WEBPACK_IMPORTED_MODULE_5__["Page"], {
     showBackLink: true,
-    title: "@andreypopp: ".concat(title),
+    title: title,
     subtitle: subtitle,
     __source: {
       fileName: _jsxFileName,
