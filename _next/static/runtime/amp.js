@@ -1,5 +1,80 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/runtime/amp.js"],{
 
+/***/ "../node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
+/*!************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "../node_modules/core-js/library/fn/json/stringify.js");
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/core-js/object/create.js":
+/*!***********************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/core-js/object/create.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "../node_modules/core-js/library/fn/object/create.js");
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
+/*!*********************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "../node_modules/core-js/library/fn/object/keys.js");
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/core-js/parse-int.js":
+/*!*******************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/core-js/parse-int.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/parse-int */ "../node_modules/core-js/library/fn/parse-int.js");
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/core-js/promise.js":
+/*!*****************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/core-js/promise.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "../node_modules/core-js/library/fn/promise.js");
+
+/***/ }),
+
+/***/ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js":
+/*!*******************************************************************************!*\
+  !*** ../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    default: obj
+  };
+}
+
+module.exports = _interopRequireDefault;
+
+/***/ }),
+
 /***/ "../node_modules/core-js/library/fn/json/stringify.js":
 /*!************************************************************!*\
   !*** ../node_modules/core-js/library/fn/json/stringify.js ***!
@@ -2215,11 +2290,11 @@ for (var i = 0; i < DOMIterables.length; i++) {
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/next/node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
-var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/object/keys.js"));
+var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "../node_modules/@babel/runtime-corejs2/core-js/object/keys.js"));
 
-var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/promise.js"));
+var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "../node_modules/@babel/runtime-corejs2/core-js/promise.js"));
 
 function _catch(body, recover) {
   try {
@@ -2436,15 +2511,15 @@ exports.getEventSourceWrapper = getEventSourceWrapper;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/next/node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "../node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
-var _stringify = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/json/stringify.js"));
+var _stringify = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "../node_modules/@babel/runtime-corejs2/core-js/json/stringify.js"));
 
-var _parseInt2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/parse-int.js"));
+var _parseInt2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "../node_modules/@babel/runtime-corejs2/core-js/parse-int.js"));
 
-var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/promise.js"));
+var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "../node_modules/@babel/runtime-corejs2/core-js/promise.js"));
 
-var _create = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/create */ "../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/object/create.js"));
+var _create = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/create */ "../node_modules/@babel/runtime-corejs2/core-js/object/create.js"));
 
 var __importDefault = void 0 && (void 0).__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
@@ -3463,81 +3538,6 @@ function setupPing(assetPrefix, pathnameFn, retry) {
 }
 
 exports.setupPing = setupPing;
-
-/***/ }),
-
-/***/ "../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
-/*!******************************************************************************************!*\
-  !*** ../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
-  \******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "../node_modules/core-js/library/fn/json/stringify.js");
-
-/***/ }),
-
-/***/ "../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/object/create.js":
-/*!*****************************************************************************************!*\
-  !*** ../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/object/create.js ***!
-  \*****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "../node_modules/core-js/library/fn/object/create.js");
-
-/***/ }),
-
-/***/ "../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
-/*!***************************************************************************************!*\
-  !*** ../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
-  \***************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "../node_modules/core-js/library/fn/object/keys.js");
-
-/***/ }),
-
-/***/ "../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/parse-int.js":
-/*!*************************************************************************************!*\
-  !*** ../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/parse-int.js ***!
-  \*************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/parse-int */ "../node_modules/core-js/library/fn/parse-int.js");
-
-/***/ }),
-
-/***/ "../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/promise.js":
-/*!***********************************************************************************!*\
-  !*** ../node_modules/next/node_modules/@babel/runtime-corejs2/core-js/promise.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "../node_modules/core-js/library/fn/promise.js");
-
-/***/ }),
-
-/***/ "../node_modules/next/node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js":
-/*!*************************************************************************************************!*\
-  !*** ../node_modules/next/node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    default: obj
-  };
-}
-
-module.exports = _interopRequireDefault;
 
 /***/ }),
 
