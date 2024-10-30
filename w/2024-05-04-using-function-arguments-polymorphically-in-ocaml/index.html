@@ -1,0 +1,100 @@
+<!doctype html>
+<meta charset="utf-8">
+<html lang="en"><head><meta charSet="UTF-8"><!-- --><meta content="width=device-width, initial-scale=1.0" name="viewport"><!-- --><title>Using function arguments polymorphically in OCaml / andreypopp.com</title><!-- --><link href="https://unpkg.com/bamboo.css" rel="stylesheet"><!-- --><style>
+    .main {
+      padding-top: 2em;
+      padding-bottom: 10em;
+    }
+    .navigation {
+      font-size: 80%;
+      font-weight: bold;
+      display: flex;
+      justify-content: end;
+      gap: 1em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    .title h1 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    .title h2 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .writing-list .writing-item {
+    }
+    .writing-list .writing-title {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+    .writing-list .writing-summary {
+      padding-top: 0.5em;
+    }
+    .writing-list .writing-read-more {
+      font-size: 80%;
+      padding-left: 0.5em;
+    }
+    .writing-draft-box {
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      color: #888;
+      font-weight: bold;
+    }
+    .writing-draft {
+      display: inline;
+      font-size: 0.7rem;
+      font-weight: bold;
+      background-color: #666;
+      color: white;
+      padding: 0.3em;
+    }
+
+  </style></head><!-- --><body><main class="main"><nav class="navigation"><a href="/atom.xml">SUBSCRIBE</a></nav><!-- --><section><div class="title"><h2><a href="/">andreypopp.com</a></h2><!-- --><h1>Using function arguments polymorphically in OCaml</h1></div></section><!-- --><!-- --><section><div><p>There's a rarely used feature in OCaml called polymorphic record fields. Let's
+see when and why one might want to use it.</p>
+<p>Suppose you have a type of values which can carry a differently typed payload,
+surfacing the type of the payload as a type parameter (in other terms, a GADT):</p>
+<pre><code class="language-ocaml">type 'a t =
+  | I : int -&gt; int t
+  | S : string -&gt; string t
+</code></pre>
+<p>Now let's say we have some such values constructed and we want to process these
+value by applying a function passed as an argument:</p>
+<pre><code class="language-ocaml">let process : ('a -&gt; unit) -&gt; unit = fun f -&gt;
+  let i = I 42 in
+  let s = S &quot;hello&quot; in
+  f i;
+  f s
+    ^
+This expression has type string t but an expression was expected of type int t
+Type string is not compatible with type int
+</code></pre>
+<p>Note how <code>f</code> was specialized to to be <code>int -&gt; unit</code> after the first application
+so the second application fails with a type error.</p>
+<p>This is because only the <code>let</code> bindings are polymorphic in OCaml, the
+arguments passed to functions are not.</p>
+<p>This is where the polymorphic record fields are useful. We can define a record
+type like this:</p>
+<pre><code class="language-ocaml">type f = { f : 'a. 'a t -&gt; unit }
+</code></pre>
+<p>Then we can make an argument not a function but of the record type:</p>
+<pre><code class="language-ocaml">let process { f } =
+  let i = I 42 in
+  let s = S &quot;hello&quot; in
+  f i;
+  f s
+</code></pre>
+<p>This typechecks nicely and works as expected. The downside is that on the
+application side it's a bit more verbose:</p>
+<pre><code class="language-ocaml">let () = 
+  let f _ = print_endline &quot;hello&quot; in
+  process { f }
+</code></pre>
+<p>Note OCaml's manual has <a href="https://ocaml.org/manual/5.1/polymorphism.html#s%3Ahigher-rank-poly">another example</a> of using polymorphic record
+fields.</p>
+</div></section><!-- --><section><a href="/">↖ back</a></section></main></body></html>

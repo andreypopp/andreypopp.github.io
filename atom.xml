@@ -1,0 +1,17 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>andreypopp.com</title>
+  <subtitle>Andrey Popp&apos;s personal website</subtitle>
+  <link href="https://andreypopp.com" rel="self"></link>
+  <updated>1970-01-01T00:00:00Z</updated>
+  <author>
+    <name>Andrey Popp</name>
+  </author>
+  <id>https://andreypopp.com/atom.xml</id>
+  <entry>
+    <title>Using function arguments polymorphically in OCaml</title>
+    <link href="https://andreypopp.com/w/2024-05-04-using-function-arguments-polymorphically-in-ocaml"></link>
+    <id>https://andreypopp.com/w/2024-05-04-using-function-arguments-polymorphically-in-ocaml</id>
+    <updated>blog/2024-05-04T00:00:00Z</updated>
+    <summary>There&apos;s a rarely used feature in OCaml called polymorphic record fields. Let&apos;s see when and why one might want to use it.</summary>
+  </entry>
+</feed>
